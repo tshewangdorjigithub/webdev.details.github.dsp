@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Details with CID</title>
+  <style>
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #343a40;
+      color: whitesmoke;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    #detailsContainer {
+      background-color: #6c757d;
+      color: whitesmoke;
+      line-height: 30px;
+      padding: 0px;
+      border-radius: 10px;
+    }
+button{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: green;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Web Development trainees details</h1>
+    <form id="cardForm">
+      <label for="cardNumber">CID Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your CID no..." maxlength="11" required>
+      <button type="submit">Search</button>
+    </form>
+    <div id="detailsContainer"></div>
+  </div>
+  <script>
+    document.getElementById('cardForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form submission
+
+      var cardNumber = document.getElementById('cardNumber').value;
+
+      // Perform card details lookup
+      var details = {};
+
+
+if (cardNumber === "11109001614") {
+        details = {
+          Name: "Suman Limbu",
+          DID: "DS(42)20-14915",
+          Email: "sumanlimboo17713132@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "SamdrupJongkha",
+          "Nickname": "Chota Don"
+        };
+      }
+
+
+      if (cardNumber === "11216005718") {
+        details = {
+          Name: "Tshewang Dorji",
+          DID: "DS(46)21-22954",
+          Email: "tshewangdorji688@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Samtse",
+          "Nickname": "Twang"
+        };
+      }
+
+      if (cardNumber === "11506002896") {
+        details = {
+          Name: "Sonam Tobgay",
+          DID: "DS(46)21-22257",
+          Email: "dextobgay1998@gmail.com",
+          Qualification: "Diploma",
+          Dzongkhag: "Trashigang",
+          "Nickname": "BABY"
+        };
+      }
+
+if (cardNumber === "11511000872") {
+        details = {
+          Name: "Nima Dorji",
+          DID: "DS(55)23-35499",
+          Email: "nyimadorjifilm@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Trashigang",
+          "Nickname": "Mase Captain"
+        };
+      }
+      
+      if (cardNumber === "10901000730") {
+        details = {
+          Name: "Yeshi Wangchuk",
+          DID: "DS(49)22-26588",
+          Email: "robinyeshey97@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Pemagathsel",
+          "Nickname": "MC Stann YOBO"
+        };
+      }
+
+        if (cardNumber === "10308001455") {
+        details = {
+          Name: "Kinley Tshering",
+          DID: "DS(54)23-32859",
+          Email: "kinleyt016@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Dagana",
+          "Nickname": "Kinley"
+        };
+      }
+
+         if (cardNumber === "10302001793") {
+        details = {
+          Name: "Karma Wangchuk",
+          DID: "DS(44)21-19724",
+          Email: "karmaw358@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Dagana",
+          "Nickname": "Karma"
+        };
+      }
+      
+
+         if (cardNumber === "11104004735") {
+        details = {
+          Name: "Dupchu Zangmo",
+          DID: "Ds(43)20-17934",
+          Email: "zdupchu@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Samdrup Jongkhar",
+          "Nickname": "Bumchu 1"
+        };
+      }
+
+        if (cardNumber === "11802000365") {
+        details = {
+          Name: "Dorji Yuden Sherpa",
+          DID: "DS(50)22-30039",
+          Email: "yudend7@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Tsirang",
+          "Nickname": "Dorji"
+        };
+      }
+
+         if (cardNumber === "11103000951") {
+        details = {
+          Name: "Sabita Mongar",
+          DID: "DS(50)22-29447",
+          Email: "sabitamongar122@gmail.com",
+          Qualification: "Diploma",
+          Dzongkhag: "Samdrup Jongkhar",
+          "Nickname": "Sabita"
+        };
+      }
+
+          if (cardNumber === "11104002085") {
+        details = {
+          Name: "Dechen Wangmo",
+          DID: "DS(49)22-26898",
+          Email: "dechenwangmoptshok@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Samdrup Jongkhar",
+          "Nickname": "Bumchu 2"
+        };
+      }
+          
+      
+
+      if (cardNumber === "11515002038") {
+        details = {
+          Name: "Kezang Choden",
+          DID: "Ds(52)22-31621",
+          Email: "kezangchoen2001@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Trashigang",
+          "Nickname": "My Singer"
+        };
+      }
+    
+  
+      if (cardNumber === "11303000021") {
+        details = {
+          Name: "Nisha Rai",
+          DID: "DS(43)20-17241",
+          Email: "nrai27065@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Sarpang",
+          "Nickname": "L.O ko buri"
+        };
+      }
+
+      if (cardNumber === "11206005674") {
+        details = {
+          Name: "Kumari Dhakal",
+          DID: "Ds(52)22-31252",
+          Email: "kumaridhakal4321@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Samtse",
+          "Nickname": "Dhakal"
+        };
+      }
+
+
+      if (cardNumber === "11410007651") {
+        details = {
+          Name: "Ugyen",
+          DID: "DS(52)22-30790",
+          Email: "bap.theri@gmail.com",
+          Qualification: "Degree",
+          Dzongkhag: "Thimphu",
+          "Nickname": "Azha"
+        };
+      }
+
+
+      if (cardNumber === "10716002828") {
+        details = {
+          Name: "Ugyen Dorji (B)",
+          DID: "DS(49)22-26435",
+          Email: "ugyendorji888@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Chukha",
+          "Nickname": "Ugyen"
+        };
+      }
+   
+
+      if (cardNumber === "11202005501") {
+        details = {
+          Name: "Basanta Ghalley",
+          DID: "DS(55)23-35135",
+          Email: "bghalleyjr6@gmail.com ",
+          Qualification: "12",
+          Dzongkhag: "Samtse",
+          "Nickname": "Kid"
+        };
+      }
+      
+
+       if (cardNumber === "12005003223") {
+        details = {
+          Name: "Karma Yangden",
+          DID: "DS(53)22-32470",
+          Email: "caspercullen55@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Zhemgang",
+          "Nickname": "PoPo"
+        };
+      }
+
+       if (cardNumber === "10903002210") {
+          details = {
+          Name: "Sonam Dema",
+          DID: "DS(44)21-19272",
+          Email: "demasonam126@gmail.com",
+          Qualification: "Degree",
+          Dzongkhag: "Pema Gatshel",
+
+          "Nickname": "My Favourite Girl",
+
+        };
+      }
+       if (cardNumber === "10605003733") {
+        details = {
+          Name: "Sherab Zangpo",
+          DID: "DS(50)22-28569",
+          Email: "sherabzangpo66@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Mongar",
+          "Nickname": "Zangpo"
+        };
+      }
+ if (cardNumber === "10305003085") {
+        details = {
+          Name: "Ugyen Dorji (A)",
+          DID: "DS(52)22-31156",
+          Email: "dorjiu22@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Dagana",
+          "Nickname": "Ugyen"
+        };
+      }
+
+
+      if (cardNumber === "11215006416") {
+        details = {
+          Name: "Mandhoj Bhujel",
+          DID: "DS(50)22-29216",
+          Email: "ds50legend@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Samtse",
+          "Nickname": "Monoj"
+        };
+      }
+if (cardNumber === "11105004081") {
+        details = {
+          Name: "Sonam Zangmo",
+          DID: "DS(45)21-21510",
+          Email: "zangmosonam2000@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Samdrup Jongkhar",
+          "Nickname": "Bumchu 3"
+        };
+      }
+if (cardNumber === "11103000592") {
+        details = {
+          Name: "Karma Yeshi",
+          DID: "DS(49)22-26302",
+          Email: "yeshikarma685@gmail.com",
+          Qualification: "12",
+          Dzongkhag: "Thimphu ",
+          "Nickname": "Karma"
+        };
+      }
+
+      if (cardNumber === "041292") {
+        details = {
+          Name: "Tapalanga Chakraborty",
+          Country: "India",
+          Email: "topo.Chakraborty@gmail.com",
+          Qualification: "Degree",
+          State: "West Bengal",
+          "Nickname": "Topo"
+        };
+      }
+
+      // Display the details in the detailsContainer div
+      var detailsContainer = document.getElementById('detailsContainer');
+      detailsContainer.innerHTML = '';
+
+      var detailsList = document.createElement('ul');
+      for (var key in details) {
+        var listItem = document.createElement('li');
+        listItem.innerHTML = key + ': ' + details[key];
+        detailsList.appendChild(listItem);
+      }
+
+      detailsContainer.appendChild(detailsList);
+    });
+  </script>
+</body>
+<center><footer>© 2023 Tshewang. All rights reserved...</footer> </center>
+</html>
